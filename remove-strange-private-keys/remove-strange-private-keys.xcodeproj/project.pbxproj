@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3759661E1EE52DED00E4C761 /* keychain-cleaner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "keychain-cleaner"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3759661E1EE52DED00E4C761 /* remove-strange-private-keys */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "remove-strange-private-keys"; sourceTree = BUILT_PRODUCTS_DIR; };
 		375966211EE52DED00E4C761 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		375966151EE52DED00E4C761 = {
 			isa = PBXGroup;
 			children = (
-				375966201EE52DED00E4C761 /* keychain-cleaner */,
+				375966201EE52DED00E4C761 /* remove-strange-private-keys */,
 				3759661F1EE52DED00E4C761 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		3759661F1EE52DED00E4C761 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3759661E1EE52DED00E4C761 /* keychain-cleaner */,
+				3759661E1EE52DED00E4C761 /* remove-strange-private-keys */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		375966201EE52DED00E4C761 /* keychain-cleaner */ = {
+		375966201EE52DED00E4C761 /* remove-strange-private-keys */ = {
 			isa = PBXGroup;
 			children = (
 				375966211EE52DED00E4C761 /* main.c */,
 			);
-			path = "keychain-cleaner";
+			path = "remove-strange-private-keys";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3759661D1EE52DED00E4C761 /* keychain-cleaner */ = {
+		3759661D1EE52DED00E4C761 /* remove-strange-private-keys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 375966251EE52DED00E4C761 /* Build configuration list for PBXNativeTarget "keychain-cleaner" */;
+			buildConfigurationList = 375966251EE52DED00E4C761 /* Build configuration list for PBXNativeTarget "remove-strange-private-keys" */;
 			buildPhases = (
 				3759661A1EE52DED00E4C761 /* Sources */,
 				3759661B1EE52DED00E4C761 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "keychain-cleaner";
+			name = "remove-strange-private-keys";
 			productName = "keychain-cleaner";
-			productReference = 3759661E1EE52DED00E4C761 /* keychain-cleaner */;
+			productReference = 3759661E1EE52DED00E4C761 /* remove-strange-private-keys */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 375966191EE52DED00E4C761 /* Build configuration list for PBXProject "keychain-cleaner" */;
+			buildConfigurationList = 375966191EE52DED00E4C761 /* Build configuration list for PBXProject "remove-strange-private-keys" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3759661D1EE52DED00E4C761 /* keychain-cleaner */,
+				3759661D1EE52DED00E4C761 /* remove-strange-private-keys */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		375966191EE52DED00E4C761 /* Build configuration list for PBXProject "keychain-cleaner" */ = {
+		375966191EE52DED00E4C761 /* Build configuration list for PBXProject "remove-strange-private-keys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				375966231EE52DED00E4C761 /* Debug */,
@@ -239,13 +239,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		375966251EE52DED00E4C761 /* Build configuration list for PBXNativeTarget "keychain-cleaner" */ = {
+		375966251EE52DED00E4C761 /* Build configuration list for PBXNativeTarget "remove-strange-private-keys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				375966261EE52DED00E4C761 /* Debug */,
 				375966271EE52DED00E4C761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
