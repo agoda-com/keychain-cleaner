@@ -36,17 +36,17 @@ int main(int argc, const char * argv[]) {
     CFDictionarySetValue(propertyMatchDict, kSecClass, kSecClassKey);
     CFDictionarySetValue(propertyMatchDict, kSecReturnRef, kCFBooleanTrue);
     CFDictionarySetValue(propertyMatchDict, kSecReturnAttributes, kCFBooleanTrue);
-    int limit = 2000;
+    short limit = 2000;
     CFNumberRef cfLimit = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt16Type, &limit);
     CFDictionarySetValue(propertyMatchDict, kSecMatchLimit, cfLimit);
     CFTypeRef entries;
     OSStatus status = SecItemCopyMatching(propertyMatchDict, &entries);
+    CFRelease(propertyMatchDict);
+    CFRelease(cfLimit);
     if (status != 0) {
         printf("Error getting private keys (OSStatus %d). Aborting.\n", status);
         return -1;
     }
-    CFRelease(propertyMatchDict);
-    CFRelease(cfLimit);
     
     long c = CFArrayGetCount(entries);
     for (long i = 0; i < c; i++) {
